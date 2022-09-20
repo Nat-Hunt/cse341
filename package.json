@@ -5,14 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "watch": "nodemon index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nat-Hunt/cse341.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nathan Hunt",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Nat-Hunt/cse341/issues"
@@ -20,5 +21,8 @@
   "homepage": "https://github.com/Nat-Hunt/cse341#readme",
   "dependencies": {
     "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }
