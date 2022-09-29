@@ -1,22 +1,29 @@
-const mongodb = require('../db/connect');
-const ObjectId = require('mongodb').ObjectId;
+const mongodb = require("../db/connect");
+const ObjectId = require("mongodb").ObjectId;
 
 const getAllDocs = async (req, res, next) => {
-    const result = await mongodb.getDb().db('CSE341').collection('contacts').find();
-    result.toArray().then((lists) => {
-        res.setHeader('Content-Type', 'application/json');
-        res.status(200).json(lists);
-    });
+  const result = await mongodb
+    .getDb()
+    .db("CSE341")
+    .collection("contacts")
+    .find();
+  result.toArray().then((lists) => {
+    res.setHeader("Content-Type", "application/json");
+    res.status(200).json(lists);
+  });
 };
 
 const getOneDoc = async (req, res, next) => {
-    const queryid = new ObjectId(req.params.id);
-    const result = await mongodb.getDb().db('CSE341').collection('contacts').find({_id: queryid});
-    result.toArray().then((lists) => {
-        res.setHeader('Content-Type', 'application/json');
-        res.status(200).json(lists[0]);
-    });
+  const queryid = new ObjectId(req.params.id);
+  const result = await mongodb
+    .getDb()
+    .db("CSE341")
+    .collection("contacts")
+    .find({ _id: queryid });
+  result.toArray().then((lists) => {
+    res.setHeader("Content-Type", "application/json");
+    res.status(200).json(lists[0]);
+  });
 };
 
-module.exports = {getAllDocs, getOneDoc};
- 
+module.exports = { getAllDocs, getOneDoc };
