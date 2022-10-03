@@ -7,3 +7,31 @@ GET http://localhost:3000/contacts/6331bc8327bbea7800710571
 GET http://localhost:3000/contacts/6331bcf727bbea7800710574
 ###
 GET http://localhost:3000/contacts/6331bd4d27bbea7800710575
+
+###
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Ashley", "lastName":"Weaver", "email":"aWeaver@test.com", "favoriteColor":"Brown", "birthday":"06/19/2000"
+}
+
+###
+PUT http://localhost:3000/contacts/6331bc8327bbea7800710571 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Mason", "lastName":"Hunt", "email":"masonmaples8888@gmail.com", "favoriteColor":"Brown", "birthday":"1998-07-30T05:00:00.000+00:00"
+
+}
+
+###
+PUT http://localhost:3000/contacts/6331bc8327bbea7800710571 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Mason", "lastName":"Hunt", "email":"nathan.mason.hunt@gmail.com", "favoriteColor":"Purple", "birthday":"1998-07-30T05:00:00.000+00:00"
+
+}
+###
+DELETE http://localhost:3000/contacts/633b28b6bc49125aceec835e HTTP/1.1
