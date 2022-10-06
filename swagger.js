@@ -6,7 +6,7 @@ const doc = {
     description:
       "This API connects to the Contacts collection and performs basic CRUD operations",
   },
-  host: `${process.env.PORT || "localhost:3000"}`,
+  host: `cse341-lmc7.onrender.com/`,
   schemes: ["http"],
 };
 
