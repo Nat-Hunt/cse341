@@ -70,7 +70,7 @@ const updateContact = async (req, res, next) => {
   } else {
     res
       .status(500)
-      .json(result.error || "Some error occured while creating the contact.");
+      .json(result.error || "Some error occured while updating the contact.");
   }
 };
 
@@ -86,7 +86,7 @@ const deleteContact = async (req, res, next) => {
   } else {
     res
       .status(500)
-      .json(result.error || "Some error occured while creating the contact.");
+      .json(result.error || "Some error occured while deleting the contact.");
   }
 };
 
