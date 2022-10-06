@@ -34,7 +34,7 @@ content-type: application/json
 
 }
 ###
-DELETE http://localhost:3000/contacts/633b28b6bc49125aceec835e HTTP/1.1
+DELETE http://localhost:3000/contacts/633b2ef22d87a41cd39a4726 HTTP/1.1
 
 
 // RENDER TESTS
@@ -74,4 +74,4 @@ content-type: application/json
 
 }
 ###
-DELETE http://cse341-lmc7.onrender.com/contacts/633b28b6bc49125aceec835e HTTP/1.1
+DELETE http://cse341-lmc7.onrender.com/contacts/633b2e462d87a41cd39a4725 HTTP/1.1
