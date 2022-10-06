@@ -7,7 +7,7 @@ const doc = {
       "This API connects to the Contacts collection and performs basic CRUD operations",
   },
   host: `cse341-lmc7.onrender.com`,
-  schemes: ["http"],
+  schemes: ["https"],
 };
 
 const outputFile = "./swagger_output.json";
